@@ -20,10 +20,9 @@ if __name__ == "__main__":
 
     city = input("\nPlease enter a city name: ")
 
-    # Check for empty strings or string with only spaces
-    # This step is not required here
-    # if not bool(city.strip()):
-    #     city = "Kansas City"
+    #check for empty strings or string with only spaces
+    if not bool(city.strip()):
+        city="Can Tho"
 
     weather_data = get_current_weather(city)
 
